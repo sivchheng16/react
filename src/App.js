@@ -32,7 +32,7 @@ export default function MyApp() {
   return (
     <div>
       <h2>Welecome to my app</h2>
-      MyButton()
+      <MyButton />
     </div>
   );
 }
