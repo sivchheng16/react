@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 const OutputList = () => {
-  const [blogs, setblogs] = useState([
+  const [blogs] = useState([
     {
       id: 1,
       tittle: "My ouptput list",
