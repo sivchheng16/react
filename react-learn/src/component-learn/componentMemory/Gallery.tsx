@@ -15,7 +15,7 @@ export default function Gallery() {
   let sculpture = sculptureList[index];
 
   return (
-    <div className={"p-4 bg-gray-800 m-4 rounded-lg text-white w-2xl "}>
+    <div className={"p-4 bg-gray-800 m-4 text-white border rounded-md mt-4"}>
       <button onClick={handleNextClick} className="border p-2 m-2">
         Next
       </button>

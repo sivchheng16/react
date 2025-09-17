@@ -22,20 +22,20 @@ export default function Fruit() {
     },
   ];
   return (
-    <div>
+    <>
       {/* <ul>
-        {fruits.map((fruits) => (
-          <li key={fruits}>{fruits}</li>
+      {fruits.map((fruits) => (
+        <li key={fruits}>{fruits}</li>
         ))}
-      </ul> */}
+        </ul> */}
 
-      <ul className="text-white">
+      <ul>
         {fruits.map((fruit) => (
           <li key={fruit.id}>
             {fruit.emoji} {fruit.name} {fruit.price}{" "}
           </li>
         ))}
       </ul>
-    </div>
+    </>
   );
 }
