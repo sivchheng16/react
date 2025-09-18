@@ -1,4 +1,4 @@
-import ChildProp from "../ChildProp";
+import ChildProp from "../../ChildProp";
 import Fruit from "./Fruit";
 
 export default function HomeProp() {
