@@ -1,4 +1,4 @@
-import { useRef } from "react";
+import { useEffect, useRef } from "react";
 
 export default function InputFocus() {
   const inputRef = useRef(null);
@@ -10,7 +10,9 @@ export default function InputFocus() {
   return (
     <div className="app">
       <input type="text" ref={inputRef} className="input" />
-      <button onClick={handleClick} className="button">Search</button>
+      <button onClick={handleClick} className="button">
+        Search
+      </button>
     </div>
   );
 }
