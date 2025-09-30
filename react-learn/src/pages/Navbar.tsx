@@ -1,5 +1,5 @@
 import { useState } from "react";
-import UpdateTittleCount from "../component-learn/useEffect/UpdateTittleCount";
+// import UpdateTittleCount from "../component-learn/useEffect/UpdateTittleCount";
 import State from "../component-learn/useState/State";
 import OutputList from "../component-learn/Output-list";
 import PropsCounter from "../component-learn/useState/Props/PropsCounter";

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import OutputList from "../component-learn/Output-list";
+// import OutputList from "../component-learn/Output-list";
 
 export default function Test() {
   const [page, setPage] = useState("home");

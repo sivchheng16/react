@@ -4,9 +4,10 @@ import InputFocus from "../component-learn/refs/InputFocus";
 import Ref from "../component-learn/refs/Refs";
 import TimePass from "../component-learn/refs/TimePass";
 import Page from "../component-learn/useContext/Context/App";
+import ToggleApp from "../component-learn/useContext/Toggle/ToggleApp";
 // import App from "../component-learn/useContext/component/App";
-import Context from "../component-learn/useContext/Context/App";
-import App from "../component-learn/useContext/Context/App";
+// import Context from "../component-learn/useContext/Context/App";
+// import App from "../component-learn/useContext/Context/App";
 import CounterUseEffect from "../component-learn/useEffect/CounterUseEffect";
 import UpdateTittleCount from "../component-learn/useEffect/UpdateTittleCount";
 import CounterPrevious from "../component-learn/useState/CounterPrevious";
@@ -40,6 +41,7 @@ export default function Home() {
       {/* <Context /> */}
       {/* <App /> */}
       <Page />
+      <ToggleApp />
     </>
   );
 }

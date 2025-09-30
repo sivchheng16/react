@@ -1,28 +1,41 @@
-import { useState, useRef } from "react";
+import { useState, useRef, useEffect } from "react";
 
 function TimePass() {
-  const [startTime, setStartTime] = useState(null);
-  const [now, setNow] = useState(null);
-  const intervalRef = useRef(null);
+  const [startTime, setStartTime] = useState<number | null>(null);
+  const [now, setNow] = useState<number | null>(null);
+  const intervalRef = useRef<number | null>(null);
 
- function handleStart() {
+  function handleStart() {
     setStartTime(Date.now());
     setNow(Date.now());
 
-    clearInterval(intervalRef.current);
-    intervalRef.current = setInterval(() => {
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
+
+    intervalRef.current = window.setInterval(() => {
       setNow(Date.now());
     }, 10);
   }
 
   function handleStop() {
-    clearInterval(intervalRef.current);
+    if (intervalRef.current) {
+      clearInterval(intervalRef.current);
+    }
   }
 
   let secondsPassed = 0;
   if (startTime != null && now != null) {
     secondsPassed = (now - startTime) / 1000;
   }
+
+  useEffect(() => {
+    return () => {
+      if (intervalRef.current) {
+        clearInterval(intervalRef.current);
+      }
+    };
+  });
 
   return (
     <div className="app">

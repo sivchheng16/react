@@ -1,4 +1,14 @@
-export default function ({ name, age, emoji, array }) {
+export default function ({
+  name,
+  age,
+  emoji,
+  array,
+}: {
+  name: any;
+  age: any;
+  emoji: any;
+  array: any;
+}) {
   return (
     <div>
       <h1>

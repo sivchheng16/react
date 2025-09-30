@@ -1,10 +1,14 @@
 import { useEffect, useRef } from "react";
 
 export default function InputFocus() {
-  const inputRef = useRef(null);
+  const inputRef = useRef<HTMLInputElement>(null);
 
   function handleClick() {
-    inputRef.current.focus();
+    useEffect(() => {
+      if (inputRef.current) {
+        inputRef.current.focus();
+      }
+    });
   }
 
   return (
