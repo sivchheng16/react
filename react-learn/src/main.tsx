@@ -1,7 +1,9 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
+import ReducerCounter from "./component-learn/useReducer/ReducerCount";
 
-import Home from "./pages/Home";
+// import Home from "./pages/Home";
+// import ToggleApp from "./component-learn/useContext/ToggleMode/ToggleApp";
 
 // import App from "./component-learn/useContext/component/App";
 // import Navbar from "./pages/Navbar";
@@ -9,6 +11,8 @@ import Home from "./pages/Home";
 
 createRoot(document.getElementById("root")!).render(
   <>
-    <Home />
+    {/* <Home /> */}
+    {/* <ToggleApp /> */}
+    <ReducerCounter/>
   </>
 );
