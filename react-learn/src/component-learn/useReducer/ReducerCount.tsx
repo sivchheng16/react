@@ -3,7 +3,7 @@ import { useReducer } from "react";
 function reducer(state: State, action: Action): State {
   switch (action.type) {
     case "increment": {
-      return { count: state.count + 1 };
+      return {...state, count: state.count + 1 };
     }
     case "decrement": {
       return { count: state.count - 1 };
@@ -18,7 +18,7 @@ function reducer(state: State, action: Action): State {
 type State = {
   count: number;
 };
-type Action = { type: "increment" } | { type: "decrement" } | { type: "reset" };
+type Action = { type: "increment" | "decrement" | "reset" };
 
 export default function ReducerCounter() {
   const initialState = { count: 0 };
