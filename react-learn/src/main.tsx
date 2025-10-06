@@ -1,6 +1,8 @@
 import { createRoot } from "react-dom/client";
 import "./index.css";
-import ToturialReducerCounter from "./component-learn/useReducer/ToturialReducerCount";
+// import UseReducerExample from "./component-learn/useReducer/UseReducerExample";
+import ReducerForm from "./component-learn/useReducer/ReducerForm";
+// import ToturialReducerCounter from "./component-learn/useReducer/ToturialReducerCount";
 // import ReducerCounter from "./component-learn/useReducer/ReducerCount";
 
 // import Home from "./pages/Home";
@@ -15,6 +17,8 @@ createRoot(document.getElementById("root")!).render(
     {/* <Home /> */}
     {/* <ToggleApp /> */}
     {/* <ReducerCounter /> */}
-    <ToturialReducerCounter />
+    {/* <ToturialReducerCounter /> */}
+    <ReducerForm />
+    {/* <UseReducerExample /> */}
   </>
 );
